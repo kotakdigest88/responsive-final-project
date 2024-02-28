@@ -10,6 +10,7 @@
 body{
     font-family: var(--default-font);
     font-size: 18px;
+    
 }
 
 h1, h2, h3,h4, h5,h6{
@@ -63,6 +64,32 @@ h3{
     border: 1px solid var(--primary-color);
     transform: translateY(-2px);
 }
+/*
+.devider-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+.devider-text svg {
+    position: relative;
+    display: block;
+    width: calc(105% + 1.3px);
+    height: 331px;
+}
+
+.devider-text .shape-fill {
+    fill: var(--primary-color);
+}
+/*#grad {
+  background-image: linear-gradient(180deg, red, yellow);
+}
+
+
+
+
 
 @keyframes bounce{
     0% {transform: translateX(-30px);}
