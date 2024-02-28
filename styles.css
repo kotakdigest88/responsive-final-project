@@ -1,0 +1,97 @@
+:root{
+    --default-font:"Poppins", sans-serif;
+    --secondary-font: "Pacifico", cursive;
+    --primary-font: "Playfair Display", serif;
+    --default-color: black;
+    --primary-color: rgb(17, 17, 73);
+    --light-color: rgba(255, 255, 255, 0.862);
+}
+
+body{
+    font-family: var(--default-font);
+    font-size: 18px;
+}
+
+h1, h2, h3,h4, h5,h6{
+    font-family: var(--primary-font);
+    font-style: normal;  
+}
+h1{
+    margin-left: 10px;
+    font-size: 64px;
+    
+}
+h3{
+    font-size: 42px;
+    font-weight: bold;
+   
+}
+.fancy-txt{
+    font-family: var(--secondary-font);
+    font-size: 90px;
+    color: rgb(233, 254, 247);
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: black;
+}
+.fancy-txt:hover{
+    animation: alternate;
+}
+.self{
+    font-family: var(--primary-font);
+    font-size: 30px;
+}
+.text-content{
+    padding: 80px 60px;
+    color: var(--primary-color); 
+}
+.text-content p{
+    line-height: 2;
+}
+
+
+.btn-branding{
+    color: var(--light-color);
+    background:var(--primary-color);
+    font-size: 18px;
+    line-height: 27px;
+    padding: 15px 30px;
+    border-radius: 5px;
+}
+.btn-branding:hover{
+    color: var(--primary-color);
+    background: var(--light-color);
+    border: 1px solid var(--primary-color);
+    transform: translateY(-2px);
+}
+
+@keyframes bounce{
+    0% {transform: translateX(-30px);}
+    20% {transform: translateY(-30px);}
+    25%,
+    30% {transform: translateY(0px);}
+    35% {transform: translateX(0px);}
+    40%{transform: translateY(20px);}
+    45%{transform: translateX(20px);}
+    50%{transform: translateY(30px);}
+    60%{transform: translateX(30px);}
+    80%{transform: translateY(40px);}
+    85%{transform: translateX(40px);}
+    80%{transform: translateY(20px);}
+    85%{transform: translateX(20px);}
+    100% {
+        transform: translateY(0px);
+    }
+    
+}
+.bounce{
+    animation-name: bounce;
+    animation-iteration-count: 3;
+
+}
+.animate{
+    animation-duration: 3s;
+
+}
+.animate--slow{
+    animation-duration: 2s;
+}
