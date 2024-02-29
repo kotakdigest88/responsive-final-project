@@ -22,6 +22,9 @@ h1{
     font-size: 64px;
     
 }
+h2 .hey{
+    left: 0;
+}
 h3{
     font-size: 42px;
     font-weight: bold;
@@ -37,9 +40,7 @@ h4{
     -webkit-text-stroke-width: 3px;
     -webkit-text-stroke-color: black;
 }
-.fancy-txt:hover{
-    animation: alternate;
-}
+
 .self{
     font-family: var(--primary-font);
     font-size: 30px;
@@ -65,73 +66,91 @@ h4{
     color: var(--primary-color);
     background: var(--light-color);
     border: 1px solid var(--primary-color);
-    transform: translateY(-2px);
+    
 }
-.container{
-    text-align: center;
-}
+
 .hey{
     position: relative;
     margin-bottom: 0;
-    left: 30%;
-    font-size: 55px;
+    left: 20%;
+    font-size: 40px;
     font-family: var(--secondary-font);
-}
-/*
-.devider-text {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-}
-.devider-text svg {
-    position: relative;
-    display: block;
-    width: calc(105% + 1.3px);
-    height: 331px;
+   
+
 }
 
-.devider-text .shape-fill {
-    fill: var(--primary-color);
+.zoom{
+    transition: transform .2s;
 }
-/*#grad {
-  background-image: linear-gradient(180deg, red, yellow);
+.zoom:hover{
+    transform: scale(1.5);
 }
+ul{
+    margin: 10px;
+}
+li{
+    display: inline;
+    list-style: none;
+    margin: 10px 10px;
+    color: var(--primary-color);
+    transform: translateY(-2px);
+}
+nav a{
+    text-decoration: none;
+    position: relative;
+   font-size: 14px;
+    font-family: var(--default-font);
+  
+
+}
+li:hover{
+    color: black;
+    
+}
+.active{
+    color:rgb(49, 18, 111) ;
+}
+.vector-logo{
+    position: relative;
+    
+    border-radius: 50%;
+    border: 1px solid var(--default-color);
+    margin: 5px;
+}
+
 
 
 
 
 
 @keyframes bounce{
-    0% {transform: translateX(-30px);}
-    20% {transform: translateY(-30px);}
-    25%,
-    30% {transform: translateY(0px);}
-    35% {transform: translateX(0px);}
-    40%{transform: translateY(20px);}
-    45%{transform: translateX(20px);}
-    50%{transform: translateY(30px);}
-    60%{transform: translateX(30px);}
-    80%{transform: translateY(40px);}
-    85%{transform: translateX(40px);}
-    80%{transform: translateY(20px);}
-    85%{transform: translateX(20px);}
-    100% {
-        transform: translateY(0px);
-    }
+  
     
+    0% ,
+    5%,
+    10% ,
+    15%,
+    20% {transform: translate(0px,-30px);}
+    30% {transform: translate(0px,0px);}
+    40% {transform: translate(0px,-30px);}
+    
+    50%,
+    60%,
+    70% {transform: translate(0px,-50px);}  
 }
+
 .bounce{
     animation-name: bounce;
-    animation-iteration-count: 3;
-
+    animation-iteration-count: infinite;
 }
+
 .animate{
     animation-duration: 3s;
 
 }
 .animate--slow{
     animation-duration: 2s;
+}
+@media (max-width: 900px){
+    
 }
