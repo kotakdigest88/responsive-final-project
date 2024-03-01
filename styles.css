@@ -18,39 +18,83 @@ h1, h2, h3,h4, h5,h6{
     font-style: normal;  
 }
 h1{
-    margin-left: 10px;
+    margin: 30px 0px 8px 10px;
     font-size: 64px;
-    
+    font-weight: bold;
 }
-h2 .hey{
-    left: 0;
+h2{
+    font-size:42px;
+    font-weight: bold;
 }
 h3{
     font-size: 42px;
     font-weight: bold;
-   
+    margin: 48px 0px 48px;
+}
+.about-h3{
+    font-size: 30px;
+    margin: 0px 0px 30px;
 }
 h4{
     font-weight: bold;
 }
-.fancy-txt{
+nav{
+    background: var(--light-color) ; 
+    margin: 0 20px 0 20px; 
+   
+}
+nav a{
+    text-decoration: none;
+    position: relative;
+   font-size: 18px;
+    font-family: var(--default-font);
+}
+.vector-logo{
+        position: relative;        
+        border-radius: 50%;
+        border: 1px solid var(--default-color);
+        margin: 5px;
+    }
+
+.bounce{
     font-family: var(--secondary-font);
     font-size: 90px;
     color: rgb(233, 254, 247);
     -webkit-text-stroke-width: 3px;
     -webkit-text-stroke-color: black;
+    animation-name: bounce;
+    animation-iteration-count: infinite;
 }
-
-.self{
-    font-family: var(--primary-font);
-    font-size: 30px;
-}
+   
 .text-content{
     padding: 80px 60px;
     color: var(--primary-color); 
 }
 .text-content p{
     line-height: 2;
+}
+.text-middle{
+    font-family: var(--primary-font);
+}
+.text-about{
+    margin: 48px 0px 0px;
+}
+.contact-box{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 80px 0px 80px;
+    margin: 0px 40px 0px 40px;
+}
+.contact-box h3{
+    margin: 0px;
+}
+footer .social-links a{
+    margin: 0 20px;
+    padding: 10px 14px;
+    color: black;
+    background: var(--light-color);
+    border-radius: 50%;
+    font-size: 20px;
 }
 
 
@@ -66,25 +110,20 @@ h4{
     color: var(--primary-color);
     background: var(--light-color);
     border: 1px solid var(--primary-color);
+    transform: translateY(-3px);
     
 }
-
-.hey{
-    position: relative;
-    margin-bottom: 0;
-    left: 20%;
-    font-size: 40px;
-    font-family: var(--secondary-font);
-   
-
-}
-
 .zoom{
     transition: transform .2s;
 }
 .zoom:hover{
     transform: scale(1.5);
 }
+.coder{
+    font-size: 12px;
+    text-decoration: wavy;
+}
+
 ul{
     margin: 10px;
 }
@@ -95,33 +134,15 @@ li{
     color: var(--primary-color);
     transform: translateY(-2px);
 }
-nav a{
-    text-decoration: none;
-    position: relative;
-   font-size: 14px;
-    font-family: var(--default-font);
-  
 
-}
+
 li:hover{
     color: black;
     
 }
 .active{
-    color:rgb(49, 18, 111) ;
+    color:black;
 }
-.vector-logo{
-    position: relative;
-    
-    border-radius: 50%;
-    border: 1px solid var(--default-color);
-    margin: 5px;
-}
-
-
-
-
-
 
 @keyframes bounce{
   
@@ -139,10 +160,7 @@ li:hover{
     70% {transform: translate(0px,-50px);}  
 }
 
-.bounce{
-    animation-name: bounce;
-    animation-iteration-count: infinite;
-}
+
 
 .animate{
     animation-duration: 3s;
@@ -151,6 +169,79 @@ li:hover{
 .animate--slow{
     animation-duration: 2s;
 }
+
+
 @media (max-width: 900px){
+ h1{
+    margin: 30px 0px 8px 10px;
+    font-size: 40px;
+    font-weight: bold;
+    }
+h2{
+    margin-top: 10px;
+    font-size:26px;
+    font-weight: bold;
+}
+
+h3{
+    font-size: 26px;
+    margin: 20px 0px 20px;
+}
+.about-h3{
+    font-size: 18px;
+    margin: 0px 0px 20px;
+    font-weight: bold;
+}
+p{
+    font-size: 14px;
+    line-height: 2;
+}
+nav{
+    margin: 0px; 
+}
+nav a{
+   font-size: 14px;
+   text-align: center;
+}
+.container{
+    text-align: center;
+}
+
+.btn-branding{
+ 
+    font-size: 14px;
+    line-height: 10px;
+    padding: 15px 30px;
+    border-radius: 5px;
+    margin: 0 0 25px!important;
     
+}
+
+.text-content{
+    padding: 0px 20px 0px 20px;
+    text-align: center; 
+}
+.text-content h3{
+    line-height: 1;
+    font-size: 30px;
+    margin: 0px 0px 20px 10px!important;
+}
+.text-content p{
+    line-height: 2;
+    font-size: 14px;
+    margin: 18px!important;
+}
+.text-middle{
+    font-size: 16px;
+    margin: 10px 20px 40px;
+}
+.text-about{
+    margin: 20px 0px 0px;
+}
+li{
+    margin: 05px 05px;
+}
+.contact-box{
+    text-align: center;
+}
 }
