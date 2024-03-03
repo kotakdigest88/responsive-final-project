@@ -67,7 +67,7 @@ nav a{
 }
    
 .text-content{
-    padding: 80px 60px;
+    padding: 40px 60px;
     color: var(--primary-color); 
 }
 .text-content p{
@@ -88,6 +88,7 @@ nav a{
 .contact-box h3{
     margin: 0px;
 }
+
 footer .social-links a{
     margin: 0 20px;
     padding: 10px 14px;
@@ -113,6 +114,7 @@ footer .social-links a{
     transform: translateY(-3px);
     
 }
+
 .zoom{
     transition: transform .2s;
 }
